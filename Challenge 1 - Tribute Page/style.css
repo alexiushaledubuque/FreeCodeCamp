@@ -1,0 +1,40 @@
+body {
+  background-color: rgb(224,224,224);
+  color: text-primary;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(162,5,5);
+}
+
+img {
+  margin-top: 10px;
+  height: 600px;
+  width: 960px;
+}
+
+#side2 {
+  margin-left: 5px;
+}
+
+table { 
+  border-spacing: 10px;
+  border-collapse: separate;
+}
+
+td { 
+    padding: 2px;
+}
+
+.right {
+  float: right;
+}
+
+.main-box {
+    box-sizing: border-box;
+    /*width: 1000px;
+    height: 700px;*/
+    padding: 30px;    
+    border: 2px solid blue;
+}
