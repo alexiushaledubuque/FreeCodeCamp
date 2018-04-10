@@ -1,0 +1,21 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+	margin: 0 auto;
+}
+
+#project-title {
+	text-align: left;
+}
+
+#first-btn {
+	margin-left: 10px;
+}
+
+button {
+	margin-top: 40px;
+}
