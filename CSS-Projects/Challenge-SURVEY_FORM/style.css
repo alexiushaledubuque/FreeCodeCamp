@@ -1,0 +1,29 @@
+#main {
+  height: 500px;
+  background-color: #C0FBFC;
+}
+#title {
+  display: flex;
+  justify-content: center;
+  font-family: cursive, Arial, sans-serif;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  background-color: #F7FAFA;
+  width: 90%;
+  height: 80%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.item1, .item2, .item3, .item4 {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+.row {
+}
