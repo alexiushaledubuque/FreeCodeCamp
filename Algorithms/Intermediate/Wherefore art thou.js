@@ -1,15 +1,12 @@
 function whatIsInAName(collection, source) {
-  let validator = false;
   return collection.filter((item) => {
     for (let property in source) {
       if (item[property] !== source[property]) {
-          validator = false;
-          break;
-      } else {
-        validator = true;
+          return false;
+          // break;
       }
     }
-    if (validator) return item;
+    return true;
   });
 }
 
