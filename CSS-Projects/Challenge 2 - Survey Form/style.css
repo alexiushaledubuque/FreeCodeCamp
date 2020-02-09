@@ -14,28 +14,45 @@ body::after {
   position: absolute;
   z-index: -1;
 }
+@font-face {
+  font-family: 'Poppins';
+  src: url(../../Fonts/poppins-cufonfonts/Poppins-Medium.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
 #title, #description{
   display: flex;
   justify-content: center;
-  font-family: Georgia, 'Times New Roman', Times, serif, Arial, sans-serif;
+  line-height: 20px;
+  font-family: Poppins;
+  font-weight: 100;
 }
 #title {
+  font-size: 32px;
   font-weight: bold;
+  padding-top: 35px;
+  padding-bottom: 10px;
 }
 #description {
-  font-size: 25px;
+  font-size: 18px;
   text-align: center;
-  font-weight: lighter;
+  font-style: italic;
+  line-height: 20px;
+  padding-bottom: 15px;
 }
 #survey-form {
   display: flex;
+  flex-direction: column;
   margin: auto;
   padding: 30px;
-  background-color: rgb(66, 52, 52);
+  background-color: rgb(24, 37, 24);
   width: 75%;
-  height: 400px;
-  font: Arial;
+  height: 1000px;
+  font-family: Poppins;
+  font-weight: 100;
+  font-size: 18px;
   opacity: .85;
+  border-radius: 5px;
 }
 .items {
   display: flex;
@@ -45,26 +62,19 @@ body::after {
   /* line-height: 20px; */
 }
 .label {
-  /* padding-right: 10px; */
   width: 100%;
-  line-height: 50px;
   text-align: left;
-  font-size: larger;
-  background-color: purple;
+  font-size: 18px;
+  padding: 10px 0 10px 0;
   opacity: 5;
   z-index: -10;
 }
-
-/* .items #name-label, .items #email-label, .items #number-label {
-  text-align: right;
-} */
-/* .items-details {
-  display: flex;
-  flex: 2;
-  width: 95%;
-}  */
-/*#dropdown-label {
+#name, #email, #number, #dropdown {
+  line-height: 30px;
+  border-radius: 5px;
+}
+#dropdown-label {
   display: flex;
   flex-flow: flex-start;
   text-align: left;
-}*/
+}
