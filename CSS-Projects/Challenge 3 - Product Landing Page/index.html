@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	  <!-- Bootstrap CSS -->
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  
+	  <title>CAHD Profile Page</title>
+	</head>
+	<body>
+<section id="main">
+    <header>
+      <h1 id="title">Restaurant Survey</h1>
+    </header>
+    <p id="description" id="what-to-do">Please help us learn what we're doing right and what we need more work on by filling out this card</p>
+    <div class="form-container">
+      <form id="survey-form" action="#" method="get">
+        <h4>Personal Information</h3>
+        <div class="personal-box">
+          <label id="name-label">Name:</label>
+          <input id="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="personal-box">
+          <label id="email-label">Email:</label>
+          <input id="email" type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="personal-box">
+          <label id="address-label">Address:</label>
+          <input id="address-input" type="text" placeholder="Enter your address">
+        </div>
+        <div class="personal-box">
+          <label id="city-label">City:</label>
+          <input id="city" type="text" placeholder="Enter your city" required>
+        </div>
+        <div class="personal-box">
+          <label id="state-label">State/Zip:</label>
+          <input id="state" type="text" placeholder="Enter your state">
+        </div>
+        <div class="age-box">
+          <label id="number-label"  class="label">Age:</label>
+          <input id="number" type="number" placeholder="Age" min="1" max="115">
+        </div>
+        <div id="gender-wrap" class="personal-box">
+           <label id="gender-label"  class="label">Gender:</label>
+           <select id="dropdown">
+             <option value="choose-one">Choose One: </option>
+             <option value="female">Female</option>
+             <option value="male">Male</option>
+             <option value="other">Prefer Not To Say</option>
+           </select>
+        </div>
+        <h4>The Food</h4>
+        <div id="favorite-wrap" class="personal-box">
+          <fieldset id="food-cusine">
+            <legend>Favorite Cuisine(s)</legend>
+            <label for="african">African</label>
+            <input type="checkbox" name="food1" value="african">
+            <label for="caribbean">Caribbean</label>
+            <input type="checkbox" name="food2" value="caribbean">
+            <label for="italian">Italian</label>
+            <input type="checkbox" name="food3" value="italian">
+            <label for="chinese">Chinese</label> 
+            <input type="checkbox" name="food4" value="chinese">
+            <label for="french">French</label>
+            <input type="checkbox" name="food5" value="french">
+            <label for="indian">Indian</label>
+            <input type="checkbox" name="food6" value="indian">
+            <label for="japanese">Japanese</label>
+            <input type="checkbox" name="food7" value="japanese">
+            <label for="soul-food">Soul Food</label>
+            <input type="checkbox" name="food10" value="soul-food">
+            <label for="mexican">Mexican</label>
+            <input type="checkbox" name="food9" value="mexican">
+            <label for="thai">Thai</label>
+            <input type="checkbox" name="food8" value="thai">
+            <label for="american">American</label>
+            <input type="checkbox" name="food11" value="american">
+            <label for="spanish">Spanish</label>
+            <input type="checkbox" name="food12" value="spanish">
+          </fieldset>
+          </div>
+          <div id="food-box"class="personal-box">
+            <table>
+              <tr>
+                <th></th>
+                <th>Excellent</th>
+                <th>Good</th>
+                <th>Average</th>
+                <th>Below average</th>
+                <th>Poor</th>
+              </tr>
+              <tr>
+                <td>How would you rate the taste of your meal?</td>
+                <td><input type="radio" name="taste" value="1"></td>
+                <td><input type="radio" name="taste" value="2"></td>
+                <td><input type="radio" name="taste" value="3"></td>
+                <td><input type="radio" name="taste" value="4"></td>
+                <td><input type="radio" name="taste" value="5"></td>
+              </tr>
+              <tr>
+                <td>Please rate your visit on value for the money.</td>
+                <td><input type="radio" name="value" value="1"></td>
+                <td><input type="radio" name="value" value="2"></td>
+                <td><input type="radio" name="value" value="3"></td>
+                <td><input type="radio" name="value" value="4"></td>
+                <td><input type="radio" name="value" value="5"></td>
+              </tr>
+              <tr>
+                <td>How would you rate the presentation of your meal?</td>
+                <td><input type="radio" name="presentation" value="1"></td>
+                <td><input type="radio" name="presentation" value="2"></td>
+                <td><input type="radio" name="presentation" value="3"></td>
+                <td><input type="radio" name="presentation" value="4"></td>
+                <td><input type="radio" name="presentation" value="5"></td>
+              </tr>
+            </table>
+          </div>
+          <h4>Please rate the following regarding the ambiance of
+  our restaurant</h4>
+          <div id="ambiance" class="personal-box">
+            <br>
+            <table>
+              <tr>
+                <th></th>
+                <th>Excellent</th>
+                <th>Good</th>
+                <th>Average</th>
+                <th>Below average</th>
+                <th>Poor</th>
+              </tr>
+              <tr>
+                <td>Cleanliness</td>
+                <td><input type="radio" name="clean" value="1"></td>
+                <td><input type="radio" name="clean" value="2"></td>
+                <td><input type="radio" name="clean" value="3"></td>
+                <td><input type="radio" name="clean" value="4"></td>
+                <td><input type="radio" name="clean" value="5"></td>
+              </tr>
+              <tr>
+                <td>Lighting</td>
+                <td><input type="radio" name="light" value="1"></td>
+                <td><input type="radio" name="light" value="2"></td>
+                <td><input type="radio" name="light" value="3"></td>
+                <td><input type="radio" name="light" value="4"></td>
+                <td><input type="radio" name="light" value="5"></td>
+              </tr>
+              <tr>
+                <td>Music</td>
+                <td><input type="radio" name="music" value="1"></td>
+                <td><input type="radio" name="music" value="2"></td>
+                <td><input type="radio" name="music" value="3"></td>
+                <td><input type="radio" name="music" value="4"></td>
+                <td><input type="radio" name="music" value="5"></td>
+              </tr>
+              <tr>
+                <td>Comfort</td>
+                <td><input type="radio" name="comfort" value="1"></td>
+                <td><input type="radio" name="comfort" value="2"></td>
+                <td><input type="radio" name="comfort" value="3"></td>
+                <td><input type="radio" name="comfort" value="4"></td>
+                <td><input type="radio" name="comfort" value="5"></td>
+              </tr>
+            </table>
+          </div>
+          <h4>Referrals and Repeat Visits</h4>
+          <div class="personal-box">
+            <div class="refer-box">
+              <label id="refer-label"  class="label">Refer a friend?</label>
+              <div>
+               <label for="definitely">Definitely</label>
+               <input type="radio" name="refer" id="definitely" value="definitely">
+               <label for="maybe">Maybe</label>
+               <input type="radio" name="refer" id="maybe" value="maybe">
+               <label for="never">Never</label>
+               <input type="radio" name="refer" id="never" value="never">
+              </div>
+            </div>
+          </div>
+          <div id="repeat-visit" class="personal-box">
+            <div class="dine-box">
+              <label id="refer-label"  class="label">Visit Again For Dinner?</label>
+              <div id="dine-group">
+                <label for="definitely">Definitely</label>
+               <input type="radio" name="refer" id="definitely" value="definitely">
+               <label for="maybe">Maybe</label>
+               <input type="radio" name="refer" id="maybe" value="maybe">
+               <label for="never">Never</label>
+               <input type="radio" name="refer" id="never" value="never">
+              </div>
+             </div>
+           </div>
+        <h4>Comments and Suggestions</h4>
+        <div id="feedback", class="personal-box">
+          <label>Tell us how we're doing</label>
+          <div>
+            <textarea name="comments" cols="30" rows="10"></textarea>
+          </div>
+        </div>
+        <div id="send-form">
+          <input id="submit" type="submit" value="Submit">
+        </div>
+      </form> <!--close survey-form -->
+     </div> <!--close form-container -->
+  </section>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
+  
+  

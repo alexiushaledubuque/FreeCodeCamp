@@ -1,0 +1,72 @@
+body {
+  height: 500px;
+  background-color: #C0FBFC;
+  /* background-image: url("orlova-maria-oMTlhdFUhdI-unsplash.jpg"); */
+  /* color: white; */
+}
+body::after {
+  content: "";
+  background: url("orlova-maria-oMTlhdFUhdI-unsplash.jpg");
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+#title, #description{
+  display: flex;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif, Arial, sans-serif;
+}
+#title {
+  font-weight: bold;
+}
+#description {
+  font-size: 25px;
+  text-align: center;
+  font-weight: lighter;
+}
+.form-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  font-size: large;
+  background-color: #3c4931;
+  width: 80%;
+  height: 800px;
+  margin: auto;
+  /* padding-bottom: 20px; */
+}
+#survey-form {
+  background-color: whitesmoke;
+  width: 75%;
+  height: 400px;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* line-height: 20px; */
+}
+.label {
+  /* padding-right: 10px; */
+  width: 100%;
+  line-height: 50px;
+  text-align: left;
+  background-color: purple;
+}
+/* .items #name-label, .items #email-label, .items #number-label {
+  text-align: right;
+} */
+/* .items-details {
+  display: flex;
+  flex: 2;
+  width: 95%;
+}  */
+/*#dropdown-label {
+  display: flex;
+  flex-flow: flex-start;
+  text-align: left;
+}*/

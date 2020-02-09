@@ -1,0 +1,147 @@
+*, *::before, *:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+#main {
+position: relative;
+margin: auto;
+padding: 0;
+width: 100%;
+height: 100%;
+color: #404040;
+background-color: #cccccc;
+border: 0.3125em solid #808080;
+}
+h1 {
+display: flex;
+justify-content: center;
+font-family: cursive, Arial, sans-serif;
+font-size: 2em;
+color: #cc0066;
+}
+p#description {
+display: flex;
+justify-content: center;
+font-size: 1.125em;
+padding-bottom: .9375em;
+padding-left: .3750em;
+}
+/****** Form Styles ******/
+.form-container {
+display: flex;
+font-size: large;
+width: 100%;
+height:100%;
+border-top: 5px solid black;
+}
+/****** Form Elements ******/
+#survey-form {
+width: 100%;
+height: 100%;
+}
+.form-box {
+display: flex;
+flex-flow: column;
+justify-content: center;
+}
+.personal-box, .age-box {
+width: 100%;
+justify-content: center;
+color: #ffffff;
+background-color: #008000;
+padding-left: .5em;
+}
+input, select {
+margin: 1em .5em 1em 2em;
+line-height: 2.7em;
+width: 60%;
+font-size: 1em;
+border-radius: 0.4em;
+padding-left: 0.625em;
+}
+select {
+margin: auto;
+width: 62%;
+height: 40px;
+}
+#gender-wrap {
+padding-bottom: 10px;
+}
+input[type="radio"] {
+width: 1.5em;
+height: .8em;
+-webkit-transform: scale(1.3);
+transform: scale(1.3);
+}
+input[type="checkbox"] {
+width: 1em;
+height: .8em;
+-webkit-transform: scale(1);
+transform: scale(1);
+}
+textarea {
+width: 70%;
+height: 10em;
+-webkit-transform: scale(1);
+transform: scale(1);
+margin: 0 auto;
+}
+#name-label, #email-label {
+padding-right: 1.5em;
+}
+#address-label {
+padding-right: .6em;
+}
+#number-label, #city-label, #dropdown-label {
+padding-right: 2em;
+}
+#gender-wrap {
+border-bottom: 0.3125em solid black;
+}
+#gender-label {
+padding-right: 3em;
+}
+#favorite-wrap {
+padding-top: 1.25em;
+}
+#food-cusine {
+width: 90%;
+font-size:  0.9375em;
+}
+table {
+table-layout:fixed;
+width: 100%;
+padding: 0;
+border-collapse: collapse;
+border-spacing: 0;
+}
+table th {
+word-wrap: break-word;
+}
+table td {
+vertical-align: top;
+word-wrap: break-word;
+}
+#food-box, #ambiance, #dine-box, #feedback, #repeat-visit {
+border-bottom: 5px solid black;
+}
+#send-form {
+display: flex;
+justify-content: center;
+margin: auto;
+}
+input[value="Submit"] {
+width: 12.5em;
+background: #ffff99;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 800px) {
+#main, .form-container, #survey-form {
+width: 90%;
+margin: auto;
+}
+input[value="Submit"] {
+background: #ffff99;
+}
+}
