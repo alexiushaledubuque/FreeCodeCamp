@@ -1,12 +1,11 @@
 body {
   height: 500px;
   background-color: #C0FBFC;
-  /* background-image: url("orlova-maria-oMTlhdFUhdI-unsplash.jpg"); */
-  /* color: white; */
+  color: white;
 }
 body::after {
   content: "";
-  background: url("orlova-maria-oMTlhdFUhdI-unsplash.jpg");
+  background: url("images/orlova-maria-oMTlhdFUhdI-unsplash.jpg");
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -28,26 +27,20 @@ body::after {
   text-align: center;
   font-weight: lighter;
 }
-.form-container {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  font-size: large;
-  background-color: #3c4931;
-  width: 80%;
-  height: 800px;
-  margin: auto;
-  /* padding-bottom: 20px; */
-}
 #survey-form {
+  display: flex;
+  margin: auto;
+  padding: 30px;
   background-color: whitesmoke;
   width: 75%;
   height: 400px;
+  font: Arial;
 }
 .items {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 0 5px 0 5px;
   /* line-height: 20px; */
 }
 .label {
@@ -55,8 +48,10 @@ body::after {
   width: 100%;
   line-height: 50px;
   text-align: left;
+  font-size: larger;
   background-color: purple;
 }
+
 /* .items #name-label, .items #email-label, .items #number-label {
   text-align: right;
 } */
