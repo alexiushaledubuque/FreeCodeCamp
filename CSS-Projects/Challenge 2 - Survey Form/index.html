@@ -19,12 +19,12 @@
       <input id="email" type="email" placeholder="Enter your Email"required>
     </div>
     <div class="items">
-      <label for="" id="number-label" class="label">Age(optional)</label>
+      <label for="" id="number-label" class="label">Age <span id="optional">(optional)</span></label>
       <input id="number" type="number" min="1" max="100" placeholder="Age">
     </div>
     <div class="items">
-      <div id="dropdown-label"  class="label">Which option best describes your current role?</div>
-      <select id="dropdown" name="cars">
+      <label for="" id="role-dropdown" class="label">Which option best describes your current role?</label>
+      <select id="dropdown" name="cars" style="height:38px;font-size:18px;color:gray;">
         <option value="selection">Select current role</option>
         <option value="student">Student</option>
         <option value="ft-job">Full Time Job</option>
@@ -34,7 +34,7 @@
       </select>  
     </div>
     <div class="items">
-      <div class="label">Would you recomment freeCodeCamp to a friend?</div>
+      <label for="" class="label">Would you recomment freeCodeCamp to a friend?</label>
       <div class="radio-buttons">
         <input type="radio" name="recommend" value="definitely"> Definitely<br>
         <input type="radio" name="recommend" value="maybe"> Maybe<br>
@@ -42,8 +42,8 @@
       </div>
     </div>
     <div class="items">
-      <div id="dropdown-label"  class="label">What is your favorite feature of freeCodeCamp?</div>
-      <select name="features">
+      <label for="" id="features-dropdown" class="label">What is your favorite feature of freeCodeCamp?</label>
+      <select name="features" style="height:38px;font-size:18px;color:gray;">
         <option value="student">Challenges</option>
         <option value="ft-job">Projects</option>
         <option value="ft-learner">Community</option>
@@ -52,23 +52,56 @@
     </div>
     <div class="items">
       <div class="label">What would you like to see improved? <span id="innertext">(Check all that apply)</span></div>
-      <input type="checkbox" name="feature1" value="front-end"> Front-end Projects
-      <input type="checkbox" name="feature2" value="back-end"> Back-end Projects
-      <input type="checkbox" name="feature3" value="data-visualization"> Data Visualization
-      <input type="checkbox" name="feature4" value="challenges"> Challenges
-      <input type="checkbox" name="feature5" value="open-source"> Open Source Community
-      <input type="checkbox" name="feature6" value="help-rooms"> Gitter help rooms
-      <input type="checkbox" name="feature7" value="videos"> Videos
-      <input type="checkbox" name="feature8" value="meetups"> City Meetups
-      <input type="checkbox" name="feature9" value="wiki"> Wiki
-      <input type="checkbox" name="feature10" value="forum"> Forum
-      <input type="checkbox" name="feature11" value="more-cources"> Additional Courses
+      <div class="checkboxes">
+        <input type="checkbox" name="feature1" value="front-end">
+        <label for="" id="checkbox1" class="label"> Front-end Projects</label>
+      </div>
+      <div class="checkboxes">
+        <input type="checkbox" name="feature2" value="back-end">
+        <label for="" id="checkbox2" class="label"> Back-end Projects</label>
+      </div>
+      <div class="checkboxes">
+        <input type="checkbox" name="feature3" value="data-visualization">
+        <label for="" id="checkbox3" class="label"> Data Visualization</label>
+      </div>
+      <div class="checkboxes">
+        <input type="checkbox" name="feature4" value="challenges">
+        <label for="" id="checkbox4" class="label"> Challenges</label>
+      </div>
+      <div class="checkboxes">
+        <input type="checkbox" name="feature5" value="open-source">
+        <label for="" id="checkbox5" class="label"> Open Source Community</label>
+      </div>
+      <div class="checkboxes">
+        <input type="checkbox" name="feature6" value="help-rooms">
+        <label for="" id="checkbox6" class="label">  Gitter help rooms</label>
+      </div>
+      <div class="checkboxes">
+        <input type="checkbox" name="feature7" value="videos">
+        <label for="" id="checkbox2" class="label"> Videos</label>
+      </div>
+      <div class="checkboxes">
+        <input type="checkbox" name="feature9" value="wiki">
+        <label for="" id="checkbox8" class="label"> Wiki</label>
+      </div>
+      <div class="checkboxes">
+        <input type="checkbox" name="feature8" value="meetups">
+        <label for="" id="checkbox9" class="label"> City Meetups</label>
+      </div>
+      <div class="checkboxes">
+        <input type="checkbox" name="feature10" value="forum">
+        <label for="" id="checkbox10" class="label"> Forum</label>
+      </div>
+      <div class="checkboxes">
+        <input type="checkbox" name="feature11" value="more-cources">
+        <label for="" id="checkbox11" class="label"> Additional Courses</label>
+      </div> 
     </div>
     <div class="items">
       <div class="label">Any comment or suggestions?</div>
       <textarea name="" id="" cols="5" rows="5" placeholder="Enter your comment here..."></textarea>
+      <button id="submit">Submit</button>
     </div>
-    <button id="submit">Submit</button>
   </form>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
