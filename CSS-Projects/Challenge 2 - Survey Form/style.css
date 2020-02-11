@@ -2,8 +2,11 @@ body {
   height: 500px;
   background-color: #C0FBFC;
   color: white;
+  font-weight: 500;
+  background: url("images/orlova-maria-oMTlhdFUhdI-unsplash.jpg");
+  background-size: cover;
 }
-body::after {
+/* body::after {
   content: "";
   background: url("images/orlova-maria-oMTlhdFUhdI-unsplash.jpg");
   opacity: 0.5;
@@ -13,7 +16,8 @@ body::after {
   right: 0;
   position: absolute;
   z-index: -1;
-}
+  background-size: cover;
+} */
 @font-face {
   font-family: 'Poppins';
   src: url(../../Fonts/poppins-cufonfonts/Poppins-Medium.ttf);
@@ -25,7 +29,7 @@ body::after {
   justify-content: center;
   line-height: 20px;
   font-family: Poppins;
-  font-weight: 45;
+  font-weight: 200;
 }
 #title {
   font-size: 32px;
@@ -47,7 +51,7 @@ body::after {
   padding: 30px;
   background-color: rgb(24, 37, 24);
   width: 75%;
-  height: 1250px;
+  height: 1300px;
   font-family: Poppins;
   font-weight: 50;
   font-size: 15px;
@@ -66,13 +70,14 @@ body::after {
   text-align: left;
   font-size: 17px;
   padding: 10px 0 15px 0;
-  opacity: 5;
-  z-index: -10;
+  /* opacity: 5; */
+  /* z-index: -10; */
 }
 
 #name, #email, #number {
   line-height: 30px;
   border-radius: 5px;
+  /* z-index: 10; */
 }
 option {
   padding: 100px;
