@@ -14,9 +14,12 @@ body {
 }
 #set-area1 {
     width: 30%;
+    border-right: 1px solid black;
 }
 #set-area2 {
     width: 70%;
+    margin-left: 30px;
+    border-top-color: white;
 }
 header {
     color: red;
@@ -34,18 +37,22 @@ h1 {
 }
 .nav-elements {
     height: 50px;
-    width: 300px;
+    width: 100%;
     border-bottom: 2px solid silver;
 }
 a {
     text-decoration: none;
 }
-@media all and (max-width: 699px) and (min-width: 590px), (min-width: 850px) {
+@media all and (max-width: 699px) {
    #main-doc {
         flex-direction: column;
     }
     #set-area1, #set-area2 {
-        width: 100%;
+        width: 120%;
+        border-right-color: white;
+    }
+    #set-area2 {
+        margin-right: 5px;
     }
     #navbar {
         height: 300px;
@@ -54,9 +61,9 @@ a {
     }
     .nav-elements {
         display: flex;
-        flex: 1;
         padding: 15px;
         width: 100%;
         border-bottom: 2px solid silver;
     }
   }
+  /* (max-width: 699px) and (min-width: 590px), (min-width: 850px)  */
