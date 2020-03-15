@@ -1,25 +1,38 @@
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+body {
+	height: 100%;
+	margin: 0;
 }
-/* #container {} */
 #welcome-section {
-	height: 500px;
-	padding: 100px;
-	text-align: center;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	padding-top: 100px;
 	background-color: green;
 }
-h1 #intro {
-	font-size: 200px;
+.intro {
+	padding-top: 200px;
 }
 h1, h2 {
-	margin-top: 30px;
-	font-size: 50px;
+	text-align: center;
+	padding-bottom: 15px;
+}
+h1 {
+	font-size: 60px;
+}
+h2 {
+	font-size: 40px;
+	padding-bottom: 50px;
+}
+h3 {
+	font-size: 40px;
+	text-align: center;
+	color: wheat;
+	font-weight: lighter;
 }
 #top-menu {
 	position: fixed;
@@ -49,7 +62,9 @@ li a {
 	color: darkblue;
 }
 #projects {
+	padding-top: 80px;
 	display: flex;
+	flex-wrap: wrap;
 }
 span {
 	text-decoration: underline;
@@ -57,7 +72,6 @@ span {
 .project-tile {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 	max-width: 300px;
-	margin: auto;
 	text-align: center;
 	font-family: arial;
 	background-color: khaki;
@@ -67,4 +81,20 @@ span {
 }
 button {
 	margin-top: 40px;
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	#container {background: papayawhip;}
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	#container {background: blueviolet;}
+} 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	#container {background: oldlace;}
+} 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	#container {background: peachpuff;}
 }
