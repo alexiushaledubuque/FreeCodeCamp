@@ -4,6 +4,7 @@
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	  <title>CAHD Profile Page</title>
 	</head>
 	<style>
@@ -17,52 +18,63 @@
 			<section class="top-menu">
 				<nav id="navbar">
 					<ul class="menu-items">
-						<li class="menu-item"><a href="#About">About</a></li>
-						<li class="menu-item"><a href="#Work">Work</a></li>
-						<li class="menu-item"><a href="#Contact">Contact</a></li>
+						<li class="menu-item"><a href="#welcome-section">About</a></li>
+						<li class="menu-item"><a href="#projects">Work</a></li>
+						<li class="menu-item"><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
 			</section>
 			<section id="welcome-section">
 				<h1 id="About" class="intro">Hey I'm Cindy</h1>
-				<h3>a full stack software engineer</h3>
+				<h3><span id="italic">a full stack software engineer</h3>
 			</section>
 			<section id="projects" class="projects-section">
 				<h2 id="Work" class="projects-section-header">These are some of my projects</h2>
-				<div class="project-tile">
-					<p id="Project1">
-						<h2>Facebook</h2>
-					    <p>I NEED SOME PROJECTS</p>
-						<a href="https://www.facebook.com/alexius.haledubuque">Find me on Facebook</a>
-					</p>
-				</div>
-				<div class="project-tile">
-					<p id="LinkedIn">
-						<h2>LinkedIn</h2>
-						<p>I NEED SOME PROJECTS</p>
-						<a href="https://www.facebook.com/alexius.haledubuque">Find me on LinkedIn</a>
-					</p>
-				</div>
-				<div class="project-tile">
-					<p id="Twitter">
-						<h2>Twitter</h2>
-						<p>I NEED SOME PROJECTS</p>
-						<a href="https://www.facebook.com/alexius.haledubuque">Find me on Twitter</a>
-					</p>
-				</div>
-				<div class="project-tile">
-					<p>
-						<h2>GitHub</h2>
-						<p>I NEED SOME PROJECTS</p>
-						<a id="profile-link" href="https://github.com/alexiushaledubuque" target="_blank">GitHub</a>
-					</p>
+				<div id="projects-container">
+					<div class="project-tile">
+						<p id="project1">
+							<h2>JS Documentation</h2>
+							<p>a guide to all things JS</p>
+							<a href="https://codepen.io/alexiushaledubuque/full/QWbaLdg">JS Docs</a>
+						</p>
+					</div>
+					<div class="project-tile">
+						<p id="project2">
+							<h2>Fruit Lovers</h2>
+							<p>Get some produce from Hale Farms</p>
+							<a href="https://codepen.io/alexiushaledubuque/full/ywoVaZ">Hale Farms</a>
+						</p>
+					</div>
+					<div class="project-tile">
+						<p id="project2">
+							<h2>FCC Survey</h2>
+							<p>tell us what you think</p>
+							<a href="https://codepen.io/alexiushaledubuque/full/xxGbBQM">Find me on Twitter</a>
+						</p>
+					</div>
+					<div class="project-tile">
+						<p>
+							<h2>GitHub</h2>
+							<p>I NEED SOME PROJECTS</p>
+							<a id="profile-link" href="https://github.com/alexiushaledubuque" target="_blank">GitHub</a>
+						</p>
+					</div>
 				</div>
 			</section>
-			<section id="Contact">
+			<section id="contact">
 				<h1 class="intro">Let's work together...</h1>
-				<h3>Find me online</h3>
-				<footer>the is the end</footer>
+				<h3>How do you take your coffee?</h3>
+				<div class="contacts-container">
+					<i class="fab fa-facebook"></i><a href="https://www.facebook.com/alexius.haledubuque">Facebook</a>
+					<i class="fab fa-github-square"></i><a href="https://github.com/alexiushaledubuque">Github</a>
+					<i class="fab fa-twitter"></i><a href="https://twitter.com/AlexiusHDubuque">Twitter</a>
+					<i class="fas fa-envelope-open-text"></i><a href="mailto:nycretailer@ymail.com">Send a note</a> 
+					<i class="fas fa-mobile-alt"></i><a href="tel:123-456-7890">Call me</a>
+				</div>
+				
 			</section>
+			<footer>the is the end</footer>
+			<script src="https://kit.fontawesome.com/812b59442a.js" crossorigin="anonymous"></script>
 		</main>
 		<!-- Optional JavaScript Test Script -->
 		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

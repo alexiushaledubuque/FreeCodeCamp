@@ -14,6 +14,7 @@ body {
 	height: 100vh;
 	padding-top: 100px;
 	background-color: #efd9c1;
+	color: gray;
 }
 .intro {
 	padding-top: 200px;
@@ -21,6 +22,7 @@ body {
 h1, h2 {
 	text-align: center;
 	padding-bottom: 15px;
+	color: rgb(0,100,0);
 }
 h1 {
 	font-size: 70px;
@@ -32,7 +34,7 @@ h2 {
 h3 {
 	font-size: 35px;
 	text-align: center;
-	color: brown;
+	color: rgb(199,21,133);
 	font-weight: lighter;
 	font-style: italic;
 }
@@ -65,32 +67,46 @@ li a {
 }
 #projects {
 	padding-top: 80px;
-	/* display: flex;
-	flex-wrap: wrap; */
+	background-color: #cccbc6;
 }
-/* .projects-section {
+h2#Work {
+	padding-bottom: 10px;
+	border-bottom: 2px solid black;
+	line-height: 48px;
+}
+.projects-section {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
 	padding: 10rem 2rem;
 	background: var(--main-blue);
-} */
+}
 .projects-section-header {
 	max-width: 640px;
-	margin: 0 auto 6rem auto;
+	margin: 0 auto 3rem auto;
 	border-bottom: 0.2rem solid var(--main-white);
+}
+#projects-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
 }
 span {
 	text-decoration: underline;
 }
 .project-tile {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	max-width: 300px;
+	width: 300px;
+	height: 300px;
 	text-align: center;
 	font-family: arial;
 	background-color: #cccbc6;
 	margin-bottom: 10px;
 }
-#contact-ellipse {
-	text-decoration: ;
+#contacts-container {
+	display: flex;
+	justify-content: space-evenly;
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -108,3 +124,8 @@ span {
 @media only screen and (min-width: 1200px) {
 	#container {background: peachpuff;}
 }
+
+
+
+
+
