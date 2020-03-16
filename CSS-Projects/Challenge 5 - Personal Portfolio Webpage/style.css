@@ -6,13 +6,14 @@
 body {
 	height: 100%;
 	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
 }
-#welcome-section {
+#welcome-section, #Contact {
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
 	padding-top: 100px;
-	background-color: green;
+	background-color: #efd9c1;
 }
 .intro {
 	padding-top: 200px;
@@ -22,17 +23,18 @@ h1, h2 {
 	padding-bottom: 15px;
 }
 h1 {
-	font-size: 60px;
+	font-size: 70px;
 }
 h2 {
 	font-size: 40px;
 	padding-bottom: 50px;
 }
 h3 {
-	font-size: 40px;
+	font-size: 35px;
 	text-align: center;
-	color: wheat;
+	color: brown;
 	font-weight: lighter;
+	font-style: italic;
 }
 #top-menu {
 	position: fixed;
@@ -40,7 +42,7 @@ h3 {
 }
 nav {
 	width: 100%;
-	background-color: blanchedalmond;
+	background-color: #a9b7c0;
 	position: fixed;
 	top: 0;
 }
@@ -51,20 +53,30 @@ ul.menu-items {
 li.menu-item {
 	padding: 20px;
 	list-style-type: none;
-	font-size: 20px;
-	color: whitesmoke
+	font-size: 30px;
 }
 li a {
 	text-decoration: none;
+	color: #ffffff;
+	font-weight: bolder;
 }
 .menu-item:hover {
-	background-color: pink;
-	color: darkblue;
+	background-color: #c7d8c6;
 }
 #projects {
 	padding-top: 80px;
-	display: flex;
-	flex-wrap: wrap;
+	/* display: flex;
+	flex-wrap: wrap; */
+}
+/* .projects-section {
+	text-align: center;
+	padding: 10rem 2rem;
+	background: var(--main-blue);
+} */
+.projects-section-header {
+	max-width: 640px;
+	margin: 0 auto 6rem auto;
+	border-bottom: 0.2rem solid var(--main-white);
 }
 span {
 	text-decoration: underline;
@@ -74,13 +86,11 @@ span {
 	max-width: 300px;
 	text-align: center;
 	font-family: arial;
-	background-color: khaki;
+	background-color: #cccbc6;
+	margin-bottom: 10px;
 }
-#first-btn {
-	margin-left: 10px;
-}
-button {
-	margin-top: 40px;
+#contact-ellipse {
+	text-decoration: ;
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
