@@ -18,6 +18,18 @@ function convertHTML(str) {
 
 convertHTML("Dolce & Gabbana");
 
+//Alternate Solution
+function convertHTML(str) {
+    const strSymbols = {
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      "\"": "&quot;",
+      "\'": "&apos;"
+    }
+    return str.split("").map(value => strSymbols[value]||value).join("");
+  };
+  
 //FCP Basic Solution
 function convertHTML(str) {
   // Split by character to avoid problems.
