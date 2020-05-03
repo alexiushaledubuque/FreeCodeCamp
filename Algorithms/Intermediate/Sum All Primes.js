@@ -18,5 +18,3 @@ function sumPrimes(num) {
   }
   
   sumPrimes(10);
-
-  

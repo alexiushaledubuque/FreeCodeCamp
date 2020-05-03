@@ -92,4 +92,3 @@ function smallestCommons(arr) {
     }
     return sol;
   };
-  
