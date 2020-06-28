@@ -1,20 +1,20 @@
 import React from 'react';
-import quotes from "./data/quotes.js"
 
 class RandomQuote extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      quote: '',
+      quotes: '',
       author: '',
-      backgroundColor: ''
+      quote: '',
+      color: ''
     }
-    this.getNewQuote = this.getNewQuote.bind(this)
+    // this.getNewQuote = this.getNewQuote.bind(this)
   }
   
   getNewQuote = () => {
-    const quoteMath = Math.floor(Math.random() * 102) + 1,
-          nextQuote = quotes[quoteMath],
+    const quoteMath = Math.floor(Math.random() * 100) + 1,
+          nextQuote = this.state.quotes[quoteMath],
           nextColor = '#'+Math.random().toString(16).substr(-6);
           
     this.setState({
@@ -25,25 +25,32 @@ class RandomQuote extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({
-      quote: quotes[0].quote,
-      author: quotes[0].author})
+    fetch('https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json')
+      .then(response => response.json())
+      .then(res => {
+        this.setState({ 
+          quotes: res.quotes,
+          author: res.quotes[0].author,
+          quote: res.quotes[0].quote
+         })
+      })
   }
   render() {
+    var { quotes } = this.state;
     return (
       <div id="quote-box">
-        <div id="text" style={{backgroundColor: this.state.backgroundColor}}>
-          {this.state.quote} <br/><br/>
-        </div>
-        <div id="author" style={{backgroundColor: this.state.backgroundColor}}>
-          By: {this.state.author}<br/><br/>
-        </div>
-        <div id="new-quote">
-          <button id="twitter">Twitter</button>
-          <button id="facebook">Facebook</button>
-          <button id="quote-btn" onClick={this.getNewQuote}>New quote</button>
-        </div>
-        <a id="tweet-quote"></a>
+        <div id="text" style={{color: this.state.backgroundColor}}>
+           {this.state.quote} <br/><br/>
+         </div>
+         <div id="author" style={{color: this.state.backgroundColor}}>
+           By: {this.state.author}<br/><br/>
+         </div>
+         <div id="new-quote">
+           <button id="twitter" style={{color: this.state.backgroundColor}}>Twitter</button>
+           <button id="facebook" style={{color: this.state.backgroundColor}}>Facebook</button>
+           <button id="quote-btn" onClick={this.getNewQuote} style={{color: this.state.backgroundColor}}>New quote</button>
+         </div>
+         <a id="tweet-quote"></a>
       </div>
     )
   };
