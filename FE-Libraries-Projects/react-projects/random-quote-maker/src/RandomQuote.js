@@ -21,7 +21,7 @@ class RandomQuote extends React.Component {
     this.setState({
       quote: nextQuote.quote,
       author: nextQuote.author,
-      backgroundColor: nextColor
+      color: nextColor
     })
   }
 
@@ -38,27 +38,26 @@ class RandomQuote extends React.Component {
   }
   render() {
     const { quotes } = this.state,
-          fontColor = this.state.backgroundColor;
+          fontColor = this.state.color;
+          
     return (
       <div id="quote-box">
-        <div id="text" style={{color: this.state.backgroundColor}}>
+        <div id="text" style={{color: this.state.color}}>
            {this.state.quote} <br/><br/>
          </div>
-         <div id="author" style={{color: this.state.backgroundColor}}>
+         <div id="author" style={{color: this.state.color}}>
            By: {this.state.author}<br/><br/>
          </div>
-         <div id="new-quote">
+         <div id="next-quote">
            <div id="social-btns">
              <button id="facebook" style={{color: fontColor}}><i class="fab fa-facebook"></i><a>Facebook</a></button>
-             <button id="twitter" style={{color: fontColor}}><a>Twitter</a></button>
+             <button id="twitter" style={{color: fontColor}}>Twitter<a href='https://twitter.com/intent/tweet' id="tweet-quote"></a></button>
            </div>
-           <div id="next-quote">
-             <button id="quote-btn" onClick={this.getNewQuote} style={{color: fontColor}}><a>New quote</a></button>
+           <div id="quote-btn">
+             <button id="new-quote" onClick={this.getNewQuote} style={{color: fontColor}}><a>New quote</a></button>
            </div>
          </div>
          <div>
-          <FontAwesomeIcon icon="edit" symbol />
-          <FontAwesomeIcon icon="edit" symbol="edit-icon" />
         </div>
       </div>
     )

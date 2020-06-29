@@ -50,10 +50,10 @@ button {
 #twitter {
   margin-left: 5px;
 }
-#new-quote {
+#next-quote {
   display: flex;
 }
-#next-quote {
+#quote-btn {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
