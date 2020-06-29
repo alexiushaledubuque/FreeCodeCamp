@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class RandomQuote extends React.Component {
   constructor(props) {
@@ -9,7 +10,7 @@ class RandomQuote extends React.Component {
       quote: '',
       color: ''
     }
-    // this.getNewQuote = this.getNewQuote.bind(this)
+    this.getNewQuote = this.getNewQuote.bind(this)
   }
   
   getNewQuote = () => {
@@ -36,7 +37,8 @@ class RandomQuote extends React.Component {
       })
   }
   render() {
-    var { quotes } = this.state;
+    const { quotes } = this.state,
+          fontColor = this.state.backgroundColor;
     return (
       <div id="quote-box">
         <div id="text" style={{color: this.state.backgroundColor}}>
@@ -46,11 +48,18 @@ class RandomQuote extends React.Component {
            By: {this.state.author}<br/><br/>
          </div>
          <div id="new-quote">
-           <button id="twitter" style={{color: this.state.backgroundColor}}>Twitter</button>
-           <button id="facebook" style={{color: this.state.backgroundColor}}>Facebook</button>
-           <button id="quote-btn" onClick={this.getNewQuote} style={{color: this.state.backgroundColor}}>New quote</button>
+           <div id="social-btns">
+             <button id="facebook" style={{color: fontColor}}><i class="fab fa-facebook"></i><a>Facebook</a></button>
+             <button id="twitter" style={{color: fontColor}}><a>Twitter</a></button>
+           </div>
+           <div id="next-quote">
+             <button id="quote-btn" onClick={this.getNewQuote} style={{color: fontColor}}><a>New quote</a></button>
+           </div>
          </div>
-         <a id="tweet-quote"></a>
+         <div>
+          <FontAwesomeIcon icon="edit" symbol />
+          <FontAwesomeIcon icon="edit" symbol="edit-icon" />
+        </div>
       </div>
     )
   };
