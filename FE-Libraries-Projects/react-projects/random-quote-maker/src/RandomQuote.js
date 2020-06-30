@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 class RandomQuote extends React.Component {
   constructor(props) {
@@ -38,23 +39,26 @@ class RandomQuote extends React.Component {
   }
   render() {
     const { quotes } = this.state,
-          fontColor = this.state.color;
+          fontColor = this.state.color,
+          hreference = 'https://twitter.com/intent/tweet?text="' + this.state.quote + '" ' + this.state.author;
           
     return (
       <div id="quote-box">
         <div id="text" style={{color: this.state.color}}>
-           {this.state.quote} <br/><br/>
+           "{this.state.quote}" <br/><br/>
          </div>
          <div id="author" style={{color: this.state.color}}>
-           By: {this.state.author}<br/><br/>
+           - {this.state.author}<br/><br/>
          </div>
          <div id="next-quote">
            <div id="social-btns">
-             <button id="facebook" style={{color: fontColor}}><i class="fab fa-facebook"></i><a>Facebook</a></button>
-             <button id="twitter" style={{color: fontColor}}>Twitter<a href='https://twitter.com/intent/tweet' id="tweet-quote"></a></button>
+             <button id="twitter" style={{backgroundColor: fontColor}}>
+               <a id="tweet-quote" class="twitter-share-button" href={hreference} target="_blank">Tweet quote
+               </a>
+             </button>
            </div>
            <div id="quote-btn">
-             <button id="new-quote" onClick={this.getNewQuote} style={{color: fontColor}}><a>New quote</a></button>
+             <button id="new-quote" onClick={this.getNewQuote} style={{backgroundColor: fontColor}}><a>New quote</a></button>
            </div>
          </div>
          <div>
